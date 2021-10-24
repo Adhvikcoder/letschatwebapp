@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lets Chat WEBAPP</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="login_div">
+    <button class="btn btn-danger" id="logout_button" onclick="logout()">Logout</button>
+    <br>
+    <br>
+    <br>
+    <center>
+        <h1>KWITTER</h1>
+<h3 id="user_name" class="color_white"></h3>
+
+<br>
+<br>
+<input id="room_name"  type="text" placeholder="RoomName">
+<button class="btn-primary" id="addroom" onclick="addroom()">Add room</button>
+
+<h3>#joinable ROOMS</h3>
+<div id="output"></div>
+</center>
+</body>
+<script src="kwitteroom.js"></script>
+</html>
